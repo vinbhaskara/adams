@@ -8,7 +8,7 @@ We introduce variants of the Adam optimizer that either bias the updates along r
 
 ![Summary of update rules](updates.png)  
 
-AdamUCB and AdamCB are biased estimates of the full-gradient. We recommend using AdamS which is an unbiased estimate of the full-gradient, and outperforms other variants based on our experiments with CIFAR-10. Please refer to the paper for more details.
+AdamUCB and AdamCB are biased estimates of the full-gradient. We recommend using AdamS which is an unbiased estimate, and outperforms other variants based on our experiments with CIFAR-10. Please refer to the paper for more details.
 
 ### Code
 
