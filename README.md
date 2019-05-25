@@ -4,7 +4,9 @@ Cite as: ``V.S. Bhaskara, and S. Desai. ``_``arXiv preprint``_
 
 ### Algorithm 
 
-We introduce variants of the Adam optimizer that either bias the updates along regions that conform across mini-batches or randomly "explore" in the parameter space along the variance-gradient in the face of uncertainty (quantified by the variance of the stochastic loss function across mini-batches). The update rules can be summarized as: ![Summary of update rules](updates.png)  
+We introduce variants of the Adam optimizer that either bias the updates along regions that conform across mini-batches or randomly "explore" in the parameter space along the variance-gradient. The update rules are summarized below: 
+
+![Summary of update rules](updates.png)  
 
 AdamUCB and AdamCB are biased estimates of the full-gradient. We recommend using AdamS which is an unbiased estimate of the full-gradient, and outperforms other variants based on our experiments with CIFAR-10. Please refer to the paper for more details.
 
