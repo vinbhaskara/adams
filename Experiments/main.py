@@ -164,7 +164,7 @@ def main():
     if args.dataset == 'cifar10':
         dataloader = datasets.CIFAR10
         num_classes = 10
-    if args.dataset == 'mnist':
+    elif args.dataset == 'mnist':
         dataloader = datasets.MNIST
         num_classes = 10
     else:
