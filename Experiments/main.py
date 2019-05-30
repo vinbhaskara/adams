@@ -211,15 +211,15 @@ def main():
                     block_name=args.block_name,
                 )
     elif args.arch.startswith('cifar10cnn'):
+        print('Adam paper CIFAR model with Dropout (Architecture same as in Original Adam Paper)')
         if args.drop == 1:
-            print('Adam paper CIFAR model with Dropout (Architecture same as in Original Adam Paper)')
             model = models.__dict__[args.arch](num_classes=num_classes, dropout=True)
         else:
             model = models.__dict__[args.arch](num_classes=num_classes)
     
     elif args.arch.startswith('mnistmlp'):
+        print('MNIST model with Dropout (Architecture same as in Original Adam Paper)')
         if args.drop == 1:
-            print('MNIST model with Dropout (Architecture same as in Original Adam Paper)')
             model = models.__dict__[args.arch](num_classes=num_classes, dropout=True)
         else:
             model = models.__dict__[args.arch](num_classes=num_classes)
