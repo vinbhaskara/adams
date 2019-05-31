@@ -1,6 +1,8 @@
 ## Exploiting Uncertainty of Loss Landscape for Stochastic Optimization
 
-Cite as: ``V.S. Bhaskara, and S. Desai. ``_``arXiv preprint``_
+Paper: [http://arxiv.org/abs/1905.13200](http://arxiv.org/abs/1905.13200)
+
+Cite as: ``V.S. Bhaskara, and S. Desai. ``_``arXiv preprint``_`` arXiv:1905.13200 [cs.LG] (2019)``.
 
 ### Algorithm 
 
@@ -8,7 +10,7 @@ We introduce variants of the Adam optimizer that either bias the updates along r
 
 ![Summary of update rules](updates.png)  
 
-AdamUCB and AdamCB are biased estimates of the full-gradient. We recommend using AdamS which is an unbiased estimate, and outperforms other variants based on our experiments with CIFAR-10. Please refer to the paper for more details.
+AdamUCB and AdamCB are biased estimates of the full-gradient. We recommend using AdamS which is an unbiased estimate, and outperforms other variants based on our experiments with CIFAR-10. Please refer to the [paper](http://arxiv.org/abs/1905.13200) for more details.
 
 ### Code
 
@@ -47,7 +49,7 @@ Results of our training runs with the mean and the standard deviation values for
 ![Comparing dropout](Experiments/results_mean_std/images/dropout.jpg)
 
 
-Please refer to the paper for more details.
+Please refer to the [paper](http://arxiv.org/abs/1905.13200) for more details.
 
 
 ### Contribute
